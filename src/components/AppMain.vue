@@ -90,6 +90,11 @@ export default{
 
 
 <template>
+    <div class="jumbotron">
+        <div class="banner">
+            current series
+        </div>
+    </div>
     <main>
         <div class="container">
             <SingleCard v-for="cardObj in cardList"
@@ -129,6 +134,22 @@ export default{
             button:hover{
                 background-color: #1663ac;
             }
+        }
+    }
+    div.jumbotron{
+        height: 40vh;
+        background-image: url(../assets/img/jumbotron.jpg);
+        background-size: cover;
+        position: relative;
+        div.banner{
+            padding: 1rem 2.5rem;
+            background-color: $blueColor;
+            color: white;
+            text-transform: uppercase;
+            font-weight: 600;
+            position: absolute;
+            bottom: -1.5rem;
+            left: 20rem;
         }
     }
 </style>
